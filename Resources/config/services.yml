@@ -1,0 +1,4 @@
+parameters:
+    buzz.client.class: Donato\BuzzProxiedCurlBundle\Buzz\Client\CurlProxy
+
+services:

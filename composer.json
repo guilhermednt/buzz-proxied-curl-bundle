@@ -1,0 +1,21 @@
+{
+    "name": "guilhermednt/buzz-proxied-curl-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony DonatoBuzzProxiedCurlBundle",
+    "keywords": ["http", "buzz", "proxy", "curl"],
+    "homepage": "http://github.com/guilhermednt/buzz-proxied-curl-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Donato",
+            "email": "packagist@cadastro.dona.to"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Donato\\BuzzProxiedCurlBundle": "" }
+    },
+    "target-dir": "Donato/BuzzProxiedCurlBundle"
+}
