@@ -2,3 +2,6 @@ parameters:
     buzz.client.class: Donato\BuzzProxiedCurlBundle\Buzz\Client\CurlProxy
 
 services:
+    buzz.client:
+        class: %buzz.client.class%
+        public: false
