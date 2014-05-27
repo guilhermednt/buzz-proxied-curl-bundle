@@ -1,7 +1,11 @@
 parameters:
-    buzz.client.class: Donato\BuzzProxiedCurlBundle\Buzz\Client\CurlProxy
+    buzz.client.curl.class: Donato\Http\Proxied\BuzzBundle\Buzz\Client\CurlProxy
 
 services:
-    buzz.client:
-        class: %buzz.client.class%
-        public: false
+    buzz.client.curl:
+        class: %buzz.client.curl.class%
+        public: true
+
+    buzz.browser:
+        class:     Buzz\Browser
+        arguments: ['@buzz.client.curl']

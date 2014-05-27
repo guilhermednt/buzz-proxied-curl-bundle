@@ -1,6 +1,6 @@
 <?php
 
-namespace Donato\BuzzProxiedCurlBundle\DependencyInjection;
+namespace Donato\Http\Proxied\BuzzBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -12,14 +12,13 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  */
 class Configuration implements ConfigurationInterface
 {
-
     /**
      * {@inheritDoc}
      */
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('donato_buzz_curl');
+        $rootNode = $treeBuilder->root('donato_http_proxied_buzz');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
@@ -27,5 +26,4 @@ class Configuration implements ConfigurationInterface
 
         return $treeBuilder;
     }
-
 }

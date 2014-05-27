@@ -1,8 +1,9 @@
 <?php
 
-namespace Donato\BuzzProxiedCurlBundle\Buzz\Client;
+namespace Donato\Http\Proxied\BuzzBundle\Buzz\Client;
 
 use Buzz\Client\Curl;
+use Buzz\Message\MessageInterface;
 
 class CurlProxy extends Curl
 {
